@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiGoEvents", "WebApiGoEvents\WebApiGoEvents.csproj", "{2FD12DD0-9AA2-4605-9244-BE93E9497C28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoREPO", "GoREPO\GoREPO.csproj", "{5C8A9052-27C9-46AC-B9D5-E3B4B2700DCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2FD12DD0-9AA2-4605-9244-BE93E9497C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FD12DD0-9AA2-4605-9244-BE93E9497C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FD12DD0-9AA2-4605-9244-BE93E9497C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C8A9052-27C9-46AC-B9D5-E3B4B2700DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8A9052-27C9-46AC-B9D5-E3B4B2700DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8A9052-27C9-46AC-B9D5-E3B4B2700DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8A9052-27C9-46AC-B9D5-E3B4B2700DCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
