@@ -13,7 +13,10 @@ namespace WebApiGoEvents.Controllers
     public class GetController : ApiController
     {
         KategoriFac kf = new KategoriFac();
-        NyhederFac nh = new NyhederFac();
+        FNyhedFac fnf = new FNyhedFac();
+        FDiskussionFac fdf = new FDiskussionFac();
+        NyhederFac nf = new NyhederFac();
+        ForumlisteFac fl = new ForumlisteFac();
 
         [Route("api/Get/GetMenu")]
         [HttpGet]
@@ -22,13 +25,30 @@ namespace WebApiGoEvents.Controllers
             return kf.GetAll();
         }
 
+        [Route("api/Get/GetForumN")]
+        [HttpGet]
+        public IEnumerable<FNyhed> GetForumN()
+        {
+            return fnf.GetAll();
+        }
+
+        [Route("api/Get/GetForumD")]
+        [HttpGet]
+        public IEnumerable<FDiskussion> GetForumD()
+        {
+            return fdf.GetAll();
+        }
         [Route("api/Get/GetNyheder")]
         [HttpGet]
         public IEnumerable<Nyheder> GetNyheder()
         {
-            return nh.GetAll();
+            return nf.GetAll();
         }
-
-
+        [Route("api/Get/GetForuml")]
+        [HttpGet]
+        public IEnumerable<Forumliste> GetForuml()
+        {
+            return fl.GetAll();
+        }
     }
 }

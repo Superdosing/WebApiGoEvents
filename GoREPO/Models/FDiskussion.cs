@@ -13,7 +13,7 @@ namespace GoREPO.Models
         public string Overskrift { get; set; }
         public string Tekst { get; set; }
         public DateTime Dato { get; set; }
-        public string Kommentar { get; set; }
+      
 
     }
 }
