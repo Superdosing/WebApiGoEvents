@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GoREPO.Factories;
 
 namespace GoREPO.Models
 {
@@ -13,5 +14,9 @@ namespace GoREPO.Models
         public string Tekst { get; set; }
         public DateTime Dato { get; set; }
         public string Billed { get; set; }
+
+       
+
+     
     }
 }
