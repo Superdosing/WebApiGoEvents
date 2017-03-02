@@ -17,7 +17,9 @@ namespace WebApiGoEvents.Controllers
         FDiskussionFac fdf = new FDiskussionFac();
         NyhederFac nf = new NyhederFac();
         ForumlisteFac fl = new ForumlisteFac();
-        forumvm fm = new forumvm();
+        EventsFac ef = new EventsFac();
+        
+
 
         [Route("api/Get/GetMenu")]
         [HttpGet]
@@ -39,18 +41,48 @@ namespace WebApiGoEvents.Controllers
         {
             return fdf.GetAll();
         }
-        [Route("api/Get/GetNyheder")]
+  
+
+
+        // Forside
+
+     
+
+      [Route("api/Get/GetNyheder")]
         [HttpGet]
         public IEnumerable<Nyheder> GetNyheder()
         {
             return nf.GetAll();
         }
-        [Route("api/Get/GetForuml")]
+
+
+
+        [Route("api/Get/GetEvents")]
         [HttpGet]
-        public IEnumerable<Forumliste> GetForuml()
+        public IEnumerable<Events> GetEvents()
         {
-            
+            return ef.GetAll();
+        }
+
+
+
+
+        [Route("api/Get/GetForumf")]
+        [HttpGet]
+        public IEnumerable<Forumliste> GetForumf()
+        {
             return fl.GetAll();
         }
+
+
+
+
+
+
+
+
+
+
+
     }
 }
