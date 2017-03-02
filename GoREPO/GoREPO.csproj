@@ -55,6 +55,7 @@
     <Compile Include="Models\FDiskussion.cs" />
     <Compile Include="Models\FNyhed.cs" />
     <Compile Include="Models\Forumliste.cs" />
+    <Compile Include="Models\forumvm.cs" />
     <Compile Include="Models\Kategori.cs" />
     <Compile Include="Models\Nyheder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -17,6 +17,7 @@ namespace WebApiGoEvents.Controllers
         FDiskussionFac fdf = new FDiskussionFac();
         NyhederFac nf = new NyhederFac();
         ForumlisteFac fl = new ForumlisteFac();
+        forumvm fm = new forumvm();
 
         [Route("api/Get/GetMenu")]
         [HttpGet]
@@ -48,6 +49,7 @@ namespace WebApiGoEvents.Controllers
         [HttpGet]
         public IEnumerable<Forumliste> GetForuml()
         {
+            
             return fl.GetAll();
         }
     }
