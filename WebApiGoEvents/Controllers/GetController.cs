@@ -41,14 +41,13 @@ namespace WebApiGoEvents.Controllers
         {
             return fdf.GetAll();
         }
-  
 
 
         // Forside
 
-     
 
-      [Route("api/Get/GetNyheder")]
+
+        [Route("api/Get/GetNyheder")]
         [HttpGet]
         public IEnumerable<Nyheder> GetNyheder()
         {
